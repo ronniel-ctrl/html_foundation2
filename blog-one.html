@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The HTML Foundation II</title>
+ </head>
+    <body>
+        <header>
+
+        <h1>RONNIEL P. REGLOS</h1>
+
+        <img src="images/csslogo.svg" width="150" height="150" alt="css logo">
+            <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="blog-one.html">BLOG 1</a></li>
+                <li><a href="blog-two.html">BLOG 2</a></li>
+                <li><a href="blog-three.html">BLOG 3</a></li>
+            </ul>
+        </nav>
+        </header>
+    <article>
+        <header>
+
+            <h2><img src="images/csslogo.svg" width="50" height="50" alt="css logo"> What is Cascading Style Sheet or CSS?</h2>
+            <p>Posted by <strong>RONNIEL REGLOS</strong></p>
+
+        </header>
+            <h4>Cascading Style Sheets (CSS)</h4>
+            <p> Is a style sheet language used for specifying the <strong>presentation</strong> and <strong>styling</strong> of 
+            a document written in a markup language such as<strong> HTML</strong> or <strong>XML</strong> (including XML dialects such as <strong>SVG, 
+            MathML or XHTML</strong>). <strong>CSS</strong> is a cornerstone technology of the World Wide Web, alongside <strong>HTML</strong> and 
+            <strong>JavaScript.</strong>
+            <p><strong>CSS</strong> is designed to enable the separation of content and presentation, including <strong>layout, colors,</strong> and <strong>fonts.</strong>
+            This separation can improve content accessibility;[further explanation needed] provide more flexibility 
+            and control in the specification of presentation characteristics; enable multiple web pages to share 
+            formatting by specifying the relevant <strong>CSS</strong> in a separate .css file, which reduces complexity and repetition 
+            in the structural content; and enable the .css file to be cached to improve the page load speed between 
+            the pages that share the file and its formatting</p>
+
+            <p>The <strong>CSS</strong> specifications are maintained by the <strong><a  href="https://www.w3.org/" target="_blank"> World Wide Web Consortium (W3C).</a></strong> Internet media type 
+            (MIME type) text/css is registered for use with CSS by RFC 2318 (March 1998). The W3C operates a free 
+            CSS validation service for CSS documents.</p>
+
+        <h3>Style Sheet</h3>
+            <p>A<strong> Style Sheet</strong> consists of a list of rules. Each rule or rule-set consists of one or more selectors, and a declaration block.</p>
+
+        <h3>Selector</h3>
+
+            <p>In CSS, <strong>Selectors </strong> declare which part of the markup a style applies to by matching tags and attributes in the markup itself.</p>
+
+            <h3>Selector Types</h3>
+
+            <p><strong>Selectors may apply to the following:</strong></p>
+        <ul>
+            <li>All elements of a specific type, e.g. the second-level headers h2</li>
+            <li>elements specified by attribute, in particular:</li>
+            <li> id: an identifier unique within the document, denoted in the selector language by a hash prefix 
+            e.g. #id</li>
+            <li>class: an identifier that can annotate multiple elements in a document, denoted by a dot prefix 
+            e.g. .classname (the phrase "CSS class", although sometimes used, is a misnomer, as element 
+            classes—specified with the HTML class attribute—is a markup feature that is distinct from 
+            browsers' CSS subsystem and the related W3C/WHATWG standards work on document styles; 
+            see RDF and microformats for the origins of the "class" system of the Web content model)</li>
+            <li>elements depending on how they are placed relative to others in the document tree.</li>
+            <li>Classes and IDs are case-sensitive, start with letters, and can include alphanumeric characters, 
+            hyphens, and underscores. A class may apply to any number of instances of any element. An ID 
+            may only be applied to a single element.</li>
+        </ul
+
+        </p><br>
+
+        <h3>Pseudo-classes</h3>
+
+            <p><strong>Pseudo-classes</strong> are used in CSS selectors to permit formatting based on information that is not contained 
+            in the document tree.
+
+            <p>One example of a widely used pseudo-class is <strong>:hover</strong>, which identifies content only when the user 
+            "points to" the visible element, usually by holding the mouse cursor over it. It is appended to a selector 
+            as in a<strong>:hover</strong> or <strong>#elementid:hover</strong>.</p>
+
+            A <strong>Pseudo-class</strong> classifies document elements, such as <strong>:link</strong> or <strong>:visited</strong>, whereas a pseudo-element makes 
+            a selection that may consist of partial elements, such as <strong>::first-line</strong> or <strong>::first-letter</strong>.[6] Note the distinction 
+            between the double-colon notation used for pseudo-elements and the single-colon notation used for 
+            pseudo-classes</p><br>
+
+        <h3>Combinators</h3>
+
+            <p>Multiple simple selectors may be joined using <strong>combinators</strong> to specify elements by <strong>location, element 
+            type, id, class,</strong> or <strong>any combination</strong> thereof. The order of the selectors is important.</p>
+
+            <p> For example, 
+            <strong><i> div </i> 
+            <i>.myClass {color: red;}</i></strong> applies to all elements of class myClass that are inside div elements, whereas 
+            <strong><i>.myClass div {color: red;}</i></strong> applies to all div elements that are inside elements of class myClass. This is not 
+            to be confused with concatenated identifiers such as <strong><i>div.myClass {color: red;}</i></strong> which applies to div 
+            elements of class myClass.</p><br>
+
+        <h3>Declaration Block</h3>
+
+            <p>A <strong>Declaration block</strong> consists of a pair of braces (<strong>{ }</strong>) enclosing a semicolon-separated list of declarations.</p><br>
+
+        <h3>Properties</h3>
+
+            <p><strong>Properties</strong> are specified in the CSS standard. Each property has a set of possible values. Some Properties can affect any type of element, and other apply only to particular groups of elements.</p><br>
+
+        <h3>Values</h3>
+
+            <p><strong>Values</strong> may be keywords, such as "<i>center</i>" or "<i>inherit</i>", or numerical values, such as 200px (200 pixels), 
+            50vw (50 percent of the viewport width) or 80% (80 percent of the parent element's width).</p>
+
+            <p><strong>Color values</strong> can be specified with keywords (e.g. "red"), hexadecimal values (e.g. #FF0000, also 
+            abbreviated as #F00), RGB values on a 0 to 255 scale (e.g. rgb(255, 0, 0)), RGBA values that specify both 
+            color and alpha transparency (e.g. rgba(255, 0, 0, 0.8)), or HSL or HSLA values (e.g. hsl(000, 100%, 50%), 
+            hsla(000, 100%, 50%, 80%)).</p>
+
+            <p><strong>Non-zero numeric values</strong> representing linear measures must include a length unit, which is either an 
+            alphabetic code or abbreviation, as in 200px or 50vw; or a percentage sign, as in 80%. Some units – cm 
+            (centimetre); in (inch); mm (millimetre); pc (pica); and pt (point) – are absolute, which means that the 
+            rendered dimension does not depend upon the structure of the page; others – em (em); ex (ex) and px 
+            (pixel)[clarification needed] – are relative, which means that factors such as the font size of a parent
+            element can affect the rendered measurement. These eight units were a feature of CSS 1[14] and 
+            retained in all subsequent revisions. The proposed CSS Values and Units Module Level 3 will, if adopted 
+            as a W3C Recommendation, provide seven further length units: ch; Q; rem; vh; vmax; vmin; and vw.</p><br>
+
+        <p>You can learn more at <a href="https://www.w3schools.com/" target="_blank">W3School</a></p>
+
+        <h3>Why should you learn CSS?</h3>
+        <p>Learning CSS is important for several reasons:</p>
+        <ul>
+             <li>Foundation of Web Development</li>
+             <li>Fundamental Skill of a Web Developer</li>
+             <li>Create and customize content on the Web</li>
+             <li>Career Opportunities</li>
+             <li>Business Solutions</li>
+        </ul>
+            <p>By doing a lot of practice, you will definitely experience errors and bugs in your code, but don't 
+            worry, you will overcome them all!</p>
+        <h3>Subscribe to Our Newsletter</h3>
+        <form>
+            <input type="email" name="email" placeholder="Your Email Address" required>
+            <input type="submit" value="Subscribe">
+        </form>
+    </article>
+    <aside>
+        <h4>Related posts</h4>
+            <ul>
+                <img src="images/csslogo.svg" width="50" height="50" alt="css logo">
+                 <li><h4>What is CSS? </h4>
+                 <p>By Ronniel Reglos</p></li>
+
+
+                 <img src="images/java.png" width="50" height="50" alt="java logo">
+                 <li><h4>What is Javascript? </h4>
+                 <p>By Ronniel Reglos</p></li>
+
+
+                <img src="images/laravel.avif" width="50" height="50" alt="framework logo">
+                 <li><h4>What is a Web Framework?</h4>
+                 <p>By Ronniel Reglos</p></li>
+            </ul>
+    </aside>
+ <footer>Copyright &copy; 2030 by RONNIEL REGLOS All Rights Reserved.</footer>
+ </body>
+</html>
